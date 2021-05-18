@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^detailberita/(.*)\.html detailberita.php?id=$1 [QSA]
+RewriteRule ^detailprofil/(.*)\.html detailprofil.php?id=$1 [QSA]
+Options All -Indexes
