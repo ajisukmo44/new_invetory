@@ -11,7 +11,6 @@
             <!-- Sidebar-->    
          <?php include 'komponen/sidebar.php'; ?>
 
-
          <div id="page-content-wrapper">
 
             <!-- Navbar -->
@@ -23,25 +22,27 @@
 <div class="card-header">
     <div class="row">
         <div class="col-sm-6 mt-1">
-        <h6 class="mt-1"> <a href="index.php" class="text-secondary h6"><b>HOME </b></a><b> / DATA BARANG</b></h6>
+        <h6 class="mt-1"> <a href="index.php" class="text-success"><b>HOME </b></a><b  class="text-secondary"> / DATA BARANG</b></h6>
         </div>
         <div class="col-sm-6 text-right mt-1 ">
         <a href=""  class="btn btn-success btn-sm pl-2 pr-2" data-toggle="modal" data-target="#tambahModal"> TAMBAH DATA </a> 
         </div>
     </div>
   </div>
-   <table class="table table-sm table-hover table-striped p-2" id="dataTable" style="font-size:14px">
+  <div class="card-body p-3">
+<div class="table-responsive">
+  <table class="table table-sm table-hover table-striped table-bordered" id="dataTable" style="font-size:14px"  width="100%">
   <thead>
     <tr class="bg-secondary text-white">
-      <td width="5%" class="text-center">No</td>
-      <td width="20%">Nama Barang</td>
-      <td width="15%">Kategori</td>
-      <td width="15%">Supplier</td>
-      <td width="15%">Harga</td>
-      <td width="10%">Stok</td>
-      <td width="10%">Satuan</td>
-      
-      <td width="10%" class="text-right ">Tindakan&nbsp;</td>
+      <td width="4%" class="text-center p-2">No</td>
+      <td width="9%" class="text-center p-2">ID Barang</td>
+      <td width="23%" class=" p-2">Nama Barang</td>
+      <td width="15%" class=" p-2">Kategori</td>
+      <td width="15%" class=" p-2">Supplier</td>
+      <td width="10%" class="text-center p-2">Harga</td>
+      <td width="5%" class="text-center p-2">Stok</td>
+      <td width="10%" class="text-center p-2">Satuan</td>
+      <td width="9%" class="text-right ">Tindakan&nbsp;&nbsp;&nbsp;</td>
     </tr>
   </thead>
   <tbody>
@@ -61,36 +62,43 @@
             ?>
             <tr>
             <td class="text-center"><?= $no++; ?></td>
+            <td class="text-center"><?= $id ?></td>
             <td><?= $nm ?></td>
             <td><?= $kat ?></td> 
             <td><?= $ns ?></td>
-            <td><?= $harga1 ?></td> 
-            <td>
-                <?php if($stok < 50 ){
-                    echo "<span class='text-danger'>". $stok . "</span>";
+            <td class="text-center"><?= $harga1 ?></td> 
+            <td class=" text-center">
+                <?php if($stok < 25 ){
+                    echo "<span class='text-danger '>". $stok . "</span>";
                 } else {
                     echo "<span class='text-success'>". $stok . "</span>";
                 }
                 ?>
         </td>
         
-        <td><?= $sat ?></td>
+        <td class="text-center"><?= $sat ?></td>
             <td  class="text-right">
-            <a href="#" data-toggle="modal" data-target="#editModal" data-id="<?= $id; ?>" class="btn btn-secondary btn-sm "><i class="fa fa-edit"></i></a><a href="aksi/deletebarang.php?id=<?= $id; ?>" onclick="return confirm('Anda yakin mau menghapus data ini ?')" class="btn btn-danger btn-sm ml-1"><i class=" fa fa-times"></i></a>
+            <a href="#" data-toggle="modal" data-target="#editModal" data-id="<?= $id; ?>" class="btn btn-secondary btn-sm "><i class="fa fa-edit"></i></a><a href="aksi/deletebarang.php?id=<?= $id; ?>" onclick="return confirm('Anda yakin mau menghapus data ini ?')" class="btn btn-danger btn-sm ml-1 mr-1"><i class=" fa fa-times"></i></a>
             </td>
             </tr>
         <?php } ?>
   </tbody>
 </table>
 </div>
+  </div>
+</div>
+
+<?php include 'komponen/footer.php'; ?>
     </div>
         </div>
         
+        
+        <!-- MODAL TAMBAH -->
         <div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header bg-light">
-                            <h5><b>Tambah Data Barang </b></h5>
+                            <h6><b>TAMBAH DATA BARANG </b></h6>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -141,6 +149,7 @@
                                     <option value="Pcs"> Pcs </option>
                                     <option value="Unit">Unit </option>
                                     <option value="Kg"> Kg </option>
+                                    <option value="Roll"> Roll </option>
                                     </select>
                                 </div>
                                     </div>
@@ -150,12 +159,7 @@
                                     <input type="text" class="form-control" name="harga"  required>
                                 </div>
                                     </div>
-                                    <div class="form-group row ">
-                                    <label for="recipient-name" class="col-form-label col-sm-3">Stok</label>
-                                    <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="stok"  required>
-                                </div>
-                                    </div>
+                                  
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Batal</button>
                                     <button type="submit" name="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
@@ -174,9 +178,8 @@
                 </div>
             </div>
 
+                      
             <!-- Footer -->
-            <?php include 'komponen/footer.php'; ?>
-
             <script>
                 $('#tambahModal').on('show.bs.modal', function(event) {
                     var button = $(event.relatedTarget)
@@ -203,30 +206,13 @@
           });
         </script>
 
-<script type="text/javascript">
-		
-		var rupiah = document.getElementById('rupiah');
-		rupiah.addEventListener('keyup', function(e){
-			// tambahkan 'Rp.' pada saat form di ketik
-			// gunakan fungsi formatRupiah() untuk mengubah angka yang di ketik menjadi format angka
-			rupiah.value = formatRupiah(this.value);
-		});
- 
-		/* Fungsi formatRupiah */
-		function formatRupiah(angka, prefix){
-			var number_string = angka.replace(/[^,\d]/g, '').toString(),
-			split   		= number_string.split(','),
-			sisa     		= split[0].length % 3,
-			rupiah     		= split[0].substr(0, sisa),
-			ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
- 
-			// tambahkan titik jika yang di input sudah menjadi angka ribuan
-			if(ribuan){
-				separator = sisa ? '.' : '';
-				rupiah += separator + ribuan.join('.');
-			}
- 
-			rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-			return prefix == undefined ? rupiah : (rupiah ?  + rupiah : '');
-		}
-	</script>
+
+<!-- data tabel -->
+<script>
+        $('#dataTable').DataTable( {
+        "paging":   false,
+        "ordering": false,
+        "info":     false,
+        "lengthMenu": [[ 25, 50, -1], [25, 50, "All"]]
+    } );
+ </script>

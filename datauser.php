@@ -22,23 +22,25 @@
 <div class="card-header">
     <div class="row">
         <div class="col-sm-6 mt-1">
-        <h6 class="mt-1"><a href="index.php" class="text-secondary h6"><b>HOME </b></a><b> / DATA USER</b></h6>
+        <h6 class="mt-1"><a href="index.php" class="text-success"><b>HOME </b></a><b class="text-secondary"> / DATA USER</b></h6>
         </div>
         <div class="col-sm-6 text-right mt-1 ">
         <a href=""  class="btn btn-success btn-sm pl-2 pr-2 " data-toggle="modal" data-target="#tambahModal"> TAMBAH DATA </a> 
         </div>
     </div>
   </div>
-   <table class="table table-sm table-hover table-striped p-2" id="dataTable" style="font-size:14px">
+   <div class="card-body">
+       <div class="table-responsive">
+   <table class="table table-sm table-hover table-bordered table-striped p-2" id="dataTable" style="font-size:14px"  width="100%">
   <thead>
-    <tr class="bg-secondary text-white">
-      <td width="5%" class="text-center">No</td>
-      <td width="15%">Username</td>
-      <td width="20%">Nama</td>
-      <td width="25%">Alamat</td>
-      <td width="15%">No Hp</td>
-      <td width="12%">Jabatan</td>
-      <td width="8%" class="text-right ">Tindakan&nbsp;</td>
+    <tr class="bg-secondary text-white m-2">
+      <td width="4%" class="p-2 text-center">No</td>
+      <td width="16%" class="p-2">Username</td>
+      <td width="20%" class="p-2">Nama</td>
+      <td width="25%" class="p-2">Alamat</td>
+      <td width="13%" class="p-2">No Hp</td>
+      <td width="12%" class="p-2">Hak Akses</td>
+      <td width="10%" class="text-right mr-2 p-2">Tindakan&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
   </thead>
   <tbody>
@@ -49,7 +51,7 @@
         while ($data = mysqli_fetch_assoc($query)) {
             $id    = $data['id_user'];
             $usr    = $data['username'];
-            $jbt   = $data['jabatan'];
+            $jbt   = $data['hak_akses'];
             $alt   = $data['alamat'];
             $nm    = $data['nama'];
             $hp    = $data['no_hp'];
@@ -61,13 +63,16 @@
             <td><?= $alt ?></td>
             <td><?= $hp ?></td> 
             <td><?= $jbt ?></td> 
-            <td  class="text-right">
-            <a href="#" data-toggle="modal" data-target="#editModal" data-id="<?= $id; ?>" class="btn btn-secondary btn-sm "><i class="fa fa-edit"></i></a><a href="aksi/deleteuser.php?id=<?= $id; ?>" onclick="return confirm('Anda yakin mau menghapus data ini ?')" class="btn btn-danger btn-sm ml-1 "><i class=" fa fa-times"></i></a>
+            <td  class="text-right mr-2">
+            <a href="#" data-toggle="modal" data-target="#editModal" data-id="<?= $id; ?>" class="btn btn-secondary btn-sm "><i class="fa fa-edit"></i></a><a href="aksi/deleteuser.php?id=<?= $id; ?>" onclick="return confirm('Anda yakin mau menghapus data ini ?')" class="btn btn-danger btn-sm ml-1 mr-2 "><i class=" fa fa-times"></i></a>
             </td>
             </tr>
         <?php } ?>
   </tbody>
 </table>
+   
+   </div>
+   </div>
 </div>
     </div>
         </div>
@@ -77,7 +82,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header bg-light">
-                            <h5><b>Tambah Data User </b></h5>
+                            <h6><b>TAMBAH DATA USER </b></h6>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -88,7 +93,7 @@
                                 <div class="form-group row">
                                     <label for="recipient-name" class="col-form-label col-sm-3">Username</label>
                                     <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="username"  required>
+                                    <input type="text" class="form-control" name="username" minlength="6"  required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -106,13 +111,13 @@
                                 <div class="form-group row">
                                     <label for="recipient-name" class="col-form-label col-sm-3">No Hp</label>
                                     <div class="col-sm-9">
-                                    <input type="text" class="form-control" name="no_hp"  required>
+                                    <input type="text" class="form-control" name="no_hp" maxlength="15"  required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="recipient-name" class="col-form-label col-sm-3">Jabatan</label>
+                                    <label for="recipient-name" class="col-form-label col-sm-3">Hak Akses</label>
                                     <div class="col-sm-9">
-                                    <select name="jabatan" id="jabatan" class="form-control" required>
+                                    <select name="hak_akses" id="hak_akses" class="form-control" required>
                                     <option value="superadmin"> Superadmin </option>
                                     <option value="admin gudang"> Admin Gudang </option>
                                     <option value="pemilik"> Pemilik </option>
@@ -122,7 +127,7 @@
                                 <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-3">Password</label>
                                     <div class="col-sm-9">
-                                    <input type="password" class="form-control" name="password"  required>
+                                    <input type="password" class="form-control" minlength="6" name="password"  required>
                                 </div>
                                     </div>
                                 <div class="modal-footer">
@@ -143,11 +148,14 @@
                 </div>
             </div>
 
-            </div>
-        </div>
+          
         <!-- Bootstrap core JS-->
             <!-- Footer -->
             <?php include 'komponen/footer.php'; ?>
+
+
+            </div>
+        </div>
 
             <script>
                 $('#tambahModal').on('show.bs.modal', function(event) {
@@ -173,4 +181,5 @@
                   });
               });
           });
+      
         </script>

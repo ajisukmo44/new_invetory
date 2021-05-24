@@ -25,26 +25,26 @@ CREATE TABLE `tb_barang` (
   `nama_barang` varchar(255) DEFAULT NULL,
   `id_supplier` varchar(15) DEFAULT NULL,
   `id_kategori` varchar(15) DEFAULT NULL,
-  `satuan` varchar(250) DEFAULT NULL,
+  `satuan` varchar(150) DEFAULT NULL,
   `harga` int(50) DEFAULT NULL,
-  `stok` int(11) DEFAULT NULL,
+  `stok` int(15) DEFAULT NULL,
   PRIMARY KEY (`id_barang`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `tb_barang` */
 
 insert  into `tb_barang`(`id_barang`,`nama_barang`,`id_supplier`,`id_kategori`,`satuan`,`harga`,`stok`) values 
-('BRG0001','Cat Avian 5 KG','SUP02','KAT01','Pcs',45000,145),
-('BRG0002','Cat Nippon 10kg','SUP01','KAT01','Pcs',70000,90),
-('BRG0003','Semen Gresik','SUP01','KAT02','Pcs',50000,40),
-('BRG0004','Besi 7 Meter','SUP04','KAT05','Pcs',70000,75);
+('BRG0001','Semen Gresik 40 Kg','SUP01','KAT01','Pcs',42000,0),
+('BRG0002','Semen Holcim 40 Kg','SUP01','KAT01','Pcs',42000,0),
+('BRG0003','Semen Indonesia','SUP01','KAT01','Pcs',50000,90),
+('BRG0004','Besi 12m','SUP02','KAT02','Kg',70000,0);
 
 /*Table structure for table `tb_barang_keluar` */
 
 DROP TABLE IF EXISTS `tb_barang_keluar`;
 
 CREATE TABLE `tb_barang_keluar` (
-  `id_barang_keluar` varchar(25) NOT NULL,
+  `id_barang_keluar` varchar(15) NOT NULL,
   `tanggal` date NOT NULL,
   `id_barang` varchar(15) NOT NULL,
   `harga_jual` int(75) NOT NULL,
@@ -56,8 +56,7 @@ CREATE TABLE `tb_barang_keluar` (
 /*Data for the table `tb_barang_keluar` */
 
 insert  into `tb_barang_keluar`(`id_barang_keluar`,`tanggal`,`id_barang`,`harga_jual`,`jumlah`,`total_harga`) values 
-('BK2021051415283E','2021-05-14','BRG0002',100000,10,10000),
-('BK2021051716298Z','2021-05-17','BRG0003',100000,10,2000000);
+('BK2021052311047','2021-05-23','BRG0003',55000,10,550000);
 
 /*Table structure for table `tb_barang_masuk` */
 
@@ -77,7 +76,28 @@ CREATE TABLE `tb_barang_masuk` (
 /*Data for the table `tb_barang_masuk` */
 
 insert  into `tb_barang_masuk`(`id_barang_masuk`,`tanggal`,`no_nota`,`id_barang`,`harga_beli`,`jumlah`,`total_harga`) values 
-('BM2021051415209','2021-05-17','INV001','BRG0001',40000,45,1800000);
+('BM2021052311031','2021-05-23','NT0393939','BRG0003',50000,100,5000000);
+
+/*Table structure for table `tb_karyawan` */
+
+DROP TABLE IF EXISTS `tb_karyawan`;
+
+CREATE TABLE `tb_karyawan` (
+  `id_karyawan` varchar(15) NOT NULL,
+  `nama_karyawan` varchar(255) NOT NULL,
+  `jenis_kelamin` enum('L','P') NOT NULL,
+  `tgl_lahir` date NOT NULL,
+  `no_hp` varchar(15) NOT NULL,
+  `alamat` text NOT NULL,
+  `jabatan` varchar(150) NOT NULL,
+  `tgl_bergabung` date NOT NULL,
+  PRIMARY KEY (`id_karyawan`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `tb_karyawan` */
+
+insert  into `tb_karyawan`(`id_karyawan`,`nama_karyawan`,`jenis_kelamin`,`tgl_lahir`,`no_hp`,`alamat`,`jabatan`,`tgl_bergabung`) values 
+('KAR001','Kirana','P','1997-11-04','082147210088','Sleman','kasir','2020-07-03');
 
 /*Table structure for table `tb_kategori` */
 
@@ -85,18 +105,15 @@ DROP TABLE IF EXISTS `tb_kategori`;
 
 CREATE TABLE `tb_kategori` (
   `id_kategori` varchar(15) NOT NULL,
-  `nama_kategori` varchar(255) NOT NULL,
+  `nama_kategori` varchar(150) NOT NULL,
   PRIMARY KEY (`id_kategori`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `tb_kategori` */
 
 insert  into `tb_kategori`(`id_kategori`,`nama_kategori`) values 
-('KAT01','Cat Tembok'),
-('KAT02','Semen'),
-('KAT03','Keramik'),
-('KAT04','Bahan Bagunan'),
-('KAT05','Besi');
+('KAT01','Semen'),
+('KAT02','Cat');
 
 /*Table structure for table `tb_supplier` */
 
@@ -105,7 +122,7 @@ DROP TABLE IF EXISTS `tb_supplier`;
 CREATE TABLE `tb_supplier` (
   `id_supplier` varchar(15) NOT NULL,
   `nama_supplier` varchar(255) NOT NULL,
-  `no_telepon` varchar(20) NOT NULL,
+  `no_telepon` varchar(15) NOT NULL,
   `alamat` text NOT NULL,
   PRIMARY KEY (`id_supplier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -113,33 +130,30 @@ CREATE TABLE `tb_supplier` (
 /*Data for the table `tb_supplier` */
 
 insert  into `tb_supplier`(`id_supplier`,`nama_supplier`,`no_telepon`,`alamat`) values 
-('SUP01','PT. Bagun Rumah','082147210088','bumiayu, brebes'),
-('SUP02','PT. Makmur Jaya','082147210088','Sleman, Yogyakarta'),
-('SUP03','PT. Indodax','081282761775','Jakarta, DKI'),
-('SUP04','PT. Tokocripto','081282761778','Wonosari, Gunung Kidul');
+('SUP01','PT. Semen Indonesia','082147210088','Kota Yogyakarta'),
+('SUP02','PT. Semen Gresik','085158134776','Sleman, Yogyakarta');
 
 /*Table structure for table `tb_user` */
 
 DROP TABLE IF EXISTS `tb_user`;
 
 CREATE TABLE `tb_user` (
-  `id_user` varchar(15) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `nama` varchar(255) DEFAULT NULL,
-  `alamat` text DEFAULT NULL,
-  `no_hp` varchar(25) DEFAULT NULL,
-  `jabatan` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `foto` text DEFAULT NULL,
+  `id_user` tinyint(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(125) NOT NULL,
+  `password` varchar(60) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `alamat` text NOT NULL,
+  `no_hp` varchar(15) NOT NULL,
+  `hak_akses` varchar(255) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `tb_user` */
 
-insert  into `tb_user`(`id_user`,`username`,`nama`,`alamat`,`no_hp`,`jabatan`,`password`,`foto`) values 
-('USR01','admin','Kirana','Bantul','082147210076','superadmin','$2y$10$wCm8IuOJCfOMxXDgG.vUbuyYIKKknkFje4PEnB58UN5EQha5f5Yla','user.png'),
-('USR02','kikey','Kikey','Sleman','082147210076','admin gudang','$2y$10$tEwhJBI.0OXuEoyxUVY82Ol4WYcohvlwd6YZ/zz8Gl7f6BTEToIwC','user.png'),
-('USR03','paijo','Paijo','Sleman','082147210076','pemilik','$2y$10$jPCouT1uVGCJ5z7bbGBkluff5BkAGeS5UP3.SD3.Efuysay/h6h9C','user.png');
+insert  into `tb_user`(`id_user`,`username`,`password`,`nama`,`alamat`,`no_hp`,`hak_akses`) values 
+(1,'admin','$2y$10$p73f1S126Jqwj.5iY53hXOPxElmfRhRn83OXkmaW4rhD20ix.pdim','admin','Sleman','082147210000','superadmin'),
+(3,'gudang','$2y$10$p73f1S126Jqwj.5iY53hXOPxElmfRhRn83OXkmaW4rhD20ix.pdim','Bag. Gudang','Gunung Kidul','08586762662','admin gudang'),
+(6,'pemilik','$2y$10$p73f1S126Jqwj.5iY53hXOPxElmfRhRn83OXkmaW4rhD20ix.pdim','pemilik','Wonosari','082147210021','pemilik');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

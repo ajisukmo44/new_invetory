@@ -6,7 +6,7 @@ if ($_POST['rowid']) {
 }
 
 // mengambil data berdasarkan id
-$sql = "SELECT * FROM tb_barang_masuk a JOIN tb_barang b ON a.id_barang = b.id_barang  WHERE id_barang_masuk = '$id' ";
+$sql = "SELECT * FROM tb_barang_keluar a JOIN tb_barang b ON a.id_barang = b.id_barang  WHERE id_barang_keluar = '$id' ";
 $result = $conn->query($sql);
 foreach ($result as $data) {
 ?>
@@ -22,9 +22,9 @@ foreach ($result as $data) {
             <form action="aksi/editdatabarangkeluar.php" method="POST" enctype="multipart/form-data">
               
                 <div class="form-group row ">
-                                    <label for="recipient-name" class="col-form-label col-sm-2">No Transaksi</label>
+                                    <label for="recipient-name" class="col-form-label col-sm-2">ID Transaksi</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="id" value="<?= $data['no_transaksi']; ?>"  readonly>
+                                    <input type="text" class="form-control" name="id_barang_keluar" value="<?= $data['id_barang_keluar']; ?>"  readonly>
                                     </div>
                                     </div>
                                     <div class="form-group row">
@@ -55,15 +55,15 @@ foreach ($result as $data) {
                                     <label for="recipient-name" class="col-form-label col-sm-2">Total</label>
                                     <div class="col-sm-10">
                                     <input type="text" class="form-control" name="total_harga" value="<?= $data['total_harga']; ?>"  required>
-                                </div>
+                                    </div>
                                     </div>
                          
-                <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Batal</button>
-                <button type="submit" name="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
-              </div>
-            </form>
-        </div>
-    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Batal</button>
+                            <button type="submit" name="submit" class="btn btn-success"><i class="fa fa-check"></i> Simpan</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
 
 <?php } ?>

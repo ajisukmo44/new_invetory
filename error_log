@@ -1,0 +1,212 @@
+[23-May-2021 17:39:09 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/ajisukmo/kirana.ajisukmo.com/koneksi.php on line 8
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[23-May-2021 17:44:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[23-May-2021 17:44:24 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[23-May-2021 17:44:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[23-May-2021 17:45:02 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[23-May-2021 17:45:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[23-May-2021 17:46:53 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:46:53 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:48:02 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:48:02 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:48:24 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:48:24 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:49:34 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:49:34 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:49:37 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:49:37 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:49:39 Asia/Jakarta] PHP Notice:  Undefined index: idb in /home/ajisukmo/kirana.ajisukmo.com/tambahbarangkeluar.php on line 9
+[23-May-2021 17:50:27 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:50:27 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[23-May-2021 17:50:47 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[23-May-2021 17:50:56 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:50:56 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:50:57 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:50:57 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangmasuk.php on line 25
+[23-May-2021 17:51:11 Asia/Jakarta] PHP Notice:  Undefined index: taw in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[23-May-2021 17:51:11 Asia/Jakarta] PHP Notice:  Undefined index: tak in /home/ajisukmo/kirana.ajisukmo.com/databarangkeluar.php on line 26
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 01:36:45 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 01:41:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 01:45:51 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 01:45:51 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 01:45:51 Asia/Jakarta] PHP Warning:  include(): Failed opening '../admin/koneksi.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 01:46:06 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 01:46:06 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 01:46:06 Asia/Jakarta] PHP Warning:  include(): Failed opening '../admin/koneksi.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 01:46:29 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 01:46:29 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 01:46:29 Asia/Jakarta] PHP Warning:  include(): Failed opening '../admin/koneksi.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 03:53:05 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 03:53:05 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 03:53:05 Asia/Jakarta] PHP Warning:  include(): Failed opening '../admin/koneksi.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 03:53:29 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 03:53:29 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 03:53:29 Asia/Jakarta] PHP Warning:  include(): Failed opening '../admin/koneksi.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajisukmo/kirana.ajisukmo.com/laporansupplier.php on line 4
+[24-May-2021 03:53:44 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 03:53:44 Asia/Jakarta] PHP Warning:  include(../admin/koneksi.php): failed to open stream: No such file or directory in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 03:53:44 Asia/Jakarta] PHP Warning:  include(): Failed opening '../admin/koneksi.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajisukmo/kirana.ajisukmo.com/laporanstokbarang.php on line 4
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 03:57:39 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 09:25:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 15:50:21 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 15:51:14 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 42
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 16:33:01 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 46
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 20:04:03 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 20:05:09 Asia/Jakarta] PHP Notice:  Undefined index: bln in /home/ajisukmo/kirana.ajisukmo.com/prediksipembelian.php on line 13
+[24-May-2021 20:05:09 Asia/Jakarta] PHP Notice:  Undefined index: thn in /home/ajisukmo/kirana.ajisukmo.com/prediksipembelian.php on line 13
+[24-May-2021 20:14:33 Asia/Jakarta] PHP Notice:  Undefined variable: totaltransaksi in /home/ajisukmo/kirana.ajisukmo.com/datatotal.php on line 186
+[24-May-2021 20:14:33 Asia/Jakarta] PHP Notice:  Undefined variable: totaltransaksi in /home/ajisukmo/kirana.ajisukmo.com/datatotal.php on line 186
+[24-May-2021 20:14:33 Asia/Jakarta] PHP Notice:  Undefined variable: totaltransaksi in /home/ajisukmo/kirana.ajisukmo.com/datatotal.php on line 186
+[24-May-2021 20:14:33 Asia/Jakarta] PHP Notice:  Undefined variable: totaltransaksi in /home/ajisukmo/kirana.ajisukmo.com/datatotal.php on line 186
+[24-May-2021 20:14:33 Asia/Jakarta] PHP Notice:  Undefined variable: totaltransaksi in /home/ajisukmo/kirana.ajisukmo.com/datatotal.php on line 186
+[24-May-2021 20:31:05 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/ajisukmo/kirana.ajisukmo.com/contenpemilik.php on line 220
+[24-May-2021 20:31:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/ajisukmo/kirana.ajisukmo.com/contenpemilik.php on line 220
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 46
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 22:47:09 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 46
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 23:04:28 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 46
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 32
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 39
+[24-May-2021 23:16:55 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/index.php on line 45
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 16
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 29
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/sidebar.php on line 46
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 12
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_username in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 14
+[24-May-2021 23:47:26 Asia/Jakarta] PHP Notice:  Undefined variable: sesen_hak_akses in /home/ajisukmo/kirana.ajisukmo.com/komponen/navbar.php on line 16

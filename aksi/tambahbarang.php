@@ -20,7 +20,6 @@ if (isset($_POST['submit'])) {
     $sup        = mysqli_real_escape_string($conn, $_POST['id_supplier']);
     $satuan     = mysqli_real_escape_string($conn, $_POST['satuan']);
     $harga      = mysqli_real_escape_string($conn, $_POST['harga']);
-    $stok       = mysqli_real_escape_string($conn, $_POST['stok']);
 
     $cekdata    = "SELECT nama_barang FROM tb_barang WHERE nama_barang = '$nama' ";
     $ada        =  mysqli_query($conn, $cekdata);
@@ -32,7 +31,7 @@ if (isset($_POST['submit'])) {
     } else {
         // Proses insert data dari form ke db
         $sql = "INSERT INTO tb_barang ( id_barang, nama_barang, id_kategori, id_supplier, satuan, harga, stok )
-                        VALUES ('$id','$nama','$kat','$sup', '$satuan','$harga','$stok')";
+                        VALUES ('$id','$nama','$kat','$sup', '$satuan','$harga','0')";
 
         if (mysqli_query($conn, $sql)) {
          

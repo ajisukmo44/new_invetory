@@ -41,7 +41,29 @@
                                         $query = "SELECT * FROM tb_barang ORDER BY id_barang";
                                         $sql = mysqli_query($conn, $query);
                                         while ($data = mysqli_fetch_array($sql)) {
-                                            echo '<option value="' . $data['id_barang'] . '">' . $data['nama_barang'] . '</option>';
+                                        $idb = $data['id_barang'];
+                                        $harganow1 = $data['harga'];
+                                        $harganow = number_format($harganow1, 0, ',', '.');
+
+                                        // harga rata rata :  jumlah total harga masuk barang / total stok masuk
+                                        $sql11 = "SELECT SUM(total_harga) AS hargabeli FROM tb_barang_masuk WHERE id_barang = '$idb' ";               
+                                        $result11       = mysqli_query($conn, $sql11);
+                                        $data11         = mysqli_fetch_array($result11);
+                                        $totalhargabeli = $data11['hargabeli'];
+            
+                                        $sql12        = "SELECT SUM(jumlah) AS stokbaru FROM tb_barang_masuk WHERE id_barang = '$idb' ";               
+                                        $result12     = mysqli_query($conn, $sql12);
+                                        $data12       = mysqli_fetch_array($result12);
+                                        $jumlahstok   = $data12['stokbaru'];
+                                    
+
+                                        if ($totalhargabeli == 0) {
+                                            $hargarata = 'data belum tersedia';
+                                        } else {
+                                            $ratarata = $totalhargabeli / $jumlahstok;
+                                            $hargarata = number_format($ratarata, 0, ',', '.');
+                                        }
+                                            echo "<option value='{$data['id_barang']}'>" . $data['nama_barang'] . " <span class='text-danger'>  (Harga Beli Rata-Rata : " . $hargarata . ")</span</option>";
                                         }
                                         ?>
                                     </select> 
@@ -63,19 +85,19 @@
                                 <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-2">Harga Beli</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="harga_beli"  required>
+                                    <input type="text" class="form-control" name="harga_beli" id="harga_beli"  onkeyup="sum();" required>
                                 </div>
                                     </div>
                                     <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-2">Jumlah</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="jumlah"  required>
+                                    <input type="number" class="form-control" name="jumlah" id="jumlah" min="1" onkeyup="sum();" required>
                                 </div>
                                     </div>
                                     <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-2">Total Harga</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="total_harga"  required>
+                                    <input type="text" class="form-control" name="total_harga" id="total_harga"  required>
                                 </div>
                                     </div>
                                 <div class="modal-footer">
@@ -84,39 +106,20 @@
                                 </div>
                             </form>
                         </div>
-</div>
-    </div>
-        </div>
-        
-
+                        </div>
+                        </div>
+                    </div>
         <script>
       document.getElementById('tanggal').valueAsDate = new Date();
     </script>  
 
-<script type="text/javascript">
-		
-		var rupiah = document.getElementById('rupiah');
-		rupiah.addEventListener('keyup', function(e){
-			// tambahkan 'Rp.' pada saat form di ketik
-			// gunakan fungsi formatRupiah() untuk mengubah angka yang di ketik menjadi format angka
-			rupiah.value = formatRupiah(this.value);
-		});
- 
-		/* Fungsi formatRupiah */
-		function formatRupiah(angka, prefix){
-			var number_string = angka.replace(/[^,\d]/g, '').toString(),
-			split   		= number_string.split(','),
-			sisa     		= split[0].length % 3,
-			rupiah     		= split[0].substr(0, sisa),
-			ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
- 
-			// tambahkan titik jika yang di input sudah menjadi angka ribuan
-			if(ribuan){
-				separator = sisa ? '.' : '';
-				rupiah += separator + ribuan.join('.');
-			}
- 
-			rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-			return prefix == undefined ? rupiah : (rupiah ?  + rupiah : '');
-		}
-	</script>
+<script>
+function sum() {
+      var txtFirstNumberValue = document.getElementById('harga_beli').value;
+      var txtSecondNumberValue = document.getElementById('jumlah').value;
+      var result = txtFirstNumberValue * txtSecondNumberValue;
+      if (!isNaN(result)) {
+         document.getElementById('total_harga').value = result;
+      }
+}
+</script>

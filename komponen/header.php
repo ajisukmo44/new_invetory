@@ -13,7 +13,7 @@ include 'fungsi/tanggal_indo.php';
         <meta name="author" content="" />
         <title>TB. Amanah Gunung Kidul</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="images/logo.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap44.css"> 
@@ -21,11 +21,15 @@ include 'fungsi/tanggal_indo.php';
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/main59.css">
         <script src="https://use.fontawesome.com/517c618f28.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     </head>
     <style>
       body{
-        font-family: arial, sans-serif;
+        font-family: 'Roboto', sans-serif;
        
       }
     .btn{

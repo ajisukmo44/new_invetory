@@ -48,10 +48,10 @@ foreach ($result as $data) {
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="recipient-name" class="col-form-label col-sm-3">Jabatan</label>
+                                    <label for="recipient-name" class="col-form-label col-sm-3">Hak Akses</label>
                                     <div class="col-sm-9">
-                                    <select name="jabatan" id="jabatan" class="form-control" required>
-                                    <option value="<?= $data['jabatan']; ?>"> <?= $data['jabatan']; ?> </option>
+                                    <select name="hak_akses" id="hak_akses" class="form-control" required>
+                                    <option value="<?= $data['hak_akses']; ?>"> <?= $data['hak_akses']; ?> </option>
                                     <option value="superadmin"> Superadmin </option>
                                     <option value="admin gudang"> Admin Gudang </option>
                                     <option value="pemilik"> Pemilik </option>

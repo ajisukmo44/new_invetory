@@ -22,19 +22,23 @@
 <div class="card-header">
     <div class="row">
         <div class="col-sm-6 mt-1">
-        <h6 class="mt-1"><a href="index.php" class="text-secondary h6"><b>HOME </b></a> <b>/ DATA KATEGORI BARANG</b></h6>
+        <h6 class="mt-1"><a href="index.php" class="text-success"><b>HOME </b></a> <b class="text-secondary">/ DATA KATEGORI BARANG</b></h6>
         </div>
         <div class="col-sm-6 text-right mt-1 ">
         <a href="" data-toggle="modal" data-target="#tambahModal" class="btn btn-success btn-sm pl-2 pr-2 "> TAMBAH DATA </a> 
         </div>
     </div>
   </div>
-   <table class="table table-sm table-hover table-striped p-2" id="dataTable" style="font-size:14px">
+  <div class="card p-3">
+      
+       <div class="table-responsive">
+  <table class="table table-sm table-hover table-striped table-bordered p-2"  style="font-size:14px">
   <thead>
     <tr class="bg-secondary text-white">
-      <td width="5%" class="text-center">No</td>
-      <td width="85%">Nama Kategori</td>
-      <td width="10%" class="text-right ">Tindakan&nbsp;</td>
+      <td width="5%" class="text-center p-2">No</td>
+      <td width="12%" class="p-2">ID Kategori</td>
+      <td width="75%" class="p-2">Nama Kategori</td>
+      <td width="8%" class="text-right p-2">Tindakan&nbsp;&nbsp;&nbsp;</td>
     </tr>
   </thead>
   <tbody>
@@ -48,14 +52,17 @@
             ?>
             <tr>
             <td class="text-center"><?= $no++; ?></td>
+            <td><?= $id ?></td>
             <td><?= $nm ?></td>
             <td  class="text-right">
-            <a href="#" data-toggle="modal" data-target="#editModal" data-id="<?= $id; ?>" class="btn btn-secondary btn-sm "><i class="fa fa-edit"></i></a><a href="aksi/deletekategori.php?id=<?= $id; ?>" onclick="return confirm('Anda yakin mau menghapus data ini ?')" class="btn btn-danger btn-sm ml-1 "><i class=" fa fa-times"></i></a>
+            <a href="#" data-toggle="modal" data-target="#editModal" data-id="<?= $id; ?>" class="btn btn-secondary btn-sm "><i class="fa fa-edit"></i></a><a href="aksi/deletekategori.php?id=<?= $id; ?>" onclick="return confirm('Anda yakin mau menghapus data ini ?')" class="btn btn-danger btn-sm ml-1 mr-2"><i class=" fa fa-times"></i></a>
             </td>
             </tr>
         <?php } ?>
   </tbody>
 </table>
+</div>
+  </div>
 </div>
     </div>
         </div>
@@ -65,7 +72,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header bg-light">
-                            <h5><b>Tambah Data Kategori </b></h5>
+                            <h6><b>TAMBAH DATA KATEGORI </b></h6>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -85,8 +92,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </div>
+              
 
 
             <!-- modal edit -->
@@ -98,6 +104,9 @@
 
             <!-- Footer -->
             <?php include 'komponen/footer.php'; ?>
+
+            </div>
+            </div>
 
             <script>
                 $('#tambahModal').on('show.bs.modal', function(event) {

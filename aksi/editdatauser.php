@@ -3,7 +3,7 @@ include '../koneksi.php';
 
 if (isset($_POST['submit'])) {
     $id       = mysqli_real_escape_string($conn, $_POST['id_user']);
-    $jbt      = mysqli_real_escape_string($conn, $_POST['jabatan']);
+    $jb       = mysqli_real_escape_string($conn, $_POST['hak_akses']);
     $alt      = mysqli_real_escape_string($conn, $_POST['alamat']);
     $nm       = mysqli_real_escape_string($conn, $_POST['nama']);
     $hp       = mysqli_real_escape_string($conn, $_POST['no_hp']);
@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
                                 nama      = '$nm',
                                 alamat    = '$alt',
                                 no_hp     = '$hp',
-                                jabatan   = '$jbt'
+                                hak_akses = '$jb'
                         WHERE   id_user   = '$id' ";
 
     if (mysqli_query($conn, $sql)) {

@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-echo '<script language="javascript">alert("Anda berhasil Log Out"); document.location="../login.php";</script>';
+echo '<script language="javascript"> document.location="../login.php";</script>';

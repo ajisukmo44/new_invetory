@@ -1,21 +1,28 @@
-<?php session_start();
+<?php 
+session_start();
 include '../koneksi.php';
 
+// kode transaksi
+$ttll  = date('Ymd');
+$jm    = date('Hi');
+$kode1 = rand(0, 9);
+$kode2 = chr(rand(65,90));
+
+$id = 'BK'.$ttll.$jm.$kode1.$kode2;
 
 if (isset($_POST['submit'])) {
 
-    $id        = mysqli_real_escape_string($conn, $_POST['id']);
     $idb        = mysqli_real_escape_string($conn, $_POST['id_barang']);
     $tgl        = mysqli_real_escape_string($conn, $_POST['tanggal']);
     $hb         = mysqli_real_escape_string($conn, $_POST['harga_jual']);
     $jml        = mysqli_real_escape_string($conn, $_POST['jumlah']);
     $th         = mysqli_real_escape_string($conn, $_POST['total_harga']);
 
-    $isi = mysqli_query($conn,"SELECT * FROM tb_barang WHERE id_barang='$idb'");
-	$i = mysqli_fetch_assoc($isi);
-	$stok = $i['stok'];
+    $isi        = mysqli_query($conn,"SELECT * FROM tb_barang WHERE id_barang='$idb'");
+	$i          = mysqli_fetch_assoc($isi);
+	$stok       = $i['stok'];
 
-    $stokbaru = $stok - $jml;
+    $stokbaru   = $stok - $jml;
 
     $cekdata    = "SELECT id_barang_keluar FROM tb_barang_keluar WHERE id_barang_keluar = '$id' ";
     $ada        =  mysqli_query($conn, $cekdata);

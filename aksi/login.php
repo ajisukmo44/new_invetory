@@ -27,8 +27,7 @@ if (isset($_POST['submit'])) {
                 $_SESSION['id_user']      = $data['id_user'];
                 $_SESSION['username']     = $data['username'];
                 $_SESSION['nama']         = $data['nama'];
-                $_SESSION['foto']         = $data['foto'];
-                $_SESSION['jabatan']      = $data['jabatan'];
+                $_SESSION['hak_akses']    = $data['hak_akses'];
 
           echo "<script language='javascript'> location.replace('../index.php')</script>";
             }

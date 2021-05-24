@@ -1,7 +1,14 @@
+  <footer class="sticky-bottom ">
+    <div class="container my-auto">
+        <div class="copyright text-left my-auto p-4 text-secondary">
+           
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<!-- <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
-<script src="libraries/bootstrap/js/bootstrap.js"></script>  -->
+<script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+<script src="libraries/bootstrap/js/bootstrap.js"></script> 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

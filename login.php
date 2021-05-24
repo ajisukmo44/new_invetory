@@ -10,13 +10,14 @@ if (isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login TB.Amanah</title>
     <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap44.css">
     <link rel="stylesheet" href="libraries/gijgo-master/dist/combined/css/gijgo.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/main59.css">
-    <link href="images/dpr.ico" rel="shortcut icon" />
+    
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico"/>
 <style>
 .form-control:focus {
   border-color: #FEC625;

@@ -46,19 +46,19 @@ foreach ($result as $data) {
                                 <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-2">Harga Beli</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="harga_beli"  value="<?= $data['harga']; ?>" required>
+                                    <input type="text" class="form-control" name="harga_beli" id="harga_beli"  value="<?= $data['harga']; ?>" onkeyup="sum();" required>
                                 </div>
                                     </div>
                                     <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-2">Jumlah</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="jumlah" value="<?= $data['jumlah']; ?>"  required>
+                                    <input type="text" class="form-control" name="jumlah" id="jumlah" value="<?= $data['jumlah']; ?>" onkeyup="sum();" required>
                                 </div>
                                     </div>
                                     <div class="form-group row ">
                                     <label for="recipient-name" class="col-form-label col-sm-2">Total Harga</label>
                                     <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="total_harga" value="<?= $data['total_harga']; ?>" required>
+                                    <input type="text" class="form-control" name="total_harga" id="total_harga" value="<?= $data['total_harga']; ?>" required>
                                 </div>
                                     </div>
                 <div class="modal-footer">
@@ -70,3 +70,15 @@ foreach ($result as $data) {
     </div>
 
 <?php } ?>
+
+
+<script>
+function sum() {
+      var txtFirstNumberValue = document.getElementById('harga_beli').value;
+      var txtSecondNumberValue = document.getElementById('jumlah').value;
+      var result = txtFirstNumberValue * txtSecondNumberValue;
+      if (!isNaN(result)) {
+         document.getElementById('total_harga').value = result;
+      }
+}
+</script>
